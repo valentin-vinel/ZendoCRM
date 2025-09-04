@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+:root {
+  --font-dm-sans: 'DM Sans', sans-serif;
+  --font-poppins: 'Poppins', sans-serif;
+  --color-primary: #3B82F6;
+  --color-secondary: #EDEDED;
+  --color-warning: #F59E0B;
+  --color-background: linear-gradient(to bottom, #E4E4E4, #FFFFFF, #E4E4E4, #FFFFFF, #E4E4E4);
+  --color-title: #163F81;
+  --color-button: linear-gradient(to right, var(--color-primary), var(--color-title));
+  --color-button-hover: linear-gradient(to left, var(--color-primary), var(--color-title));
+}
+
+body {
+  font-family: var(--font-dm-sans);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Classe spécifique pour les titres */
+.font-poppins {
+  font-family: var(--font-poppins);
+}
+
+/* Couleurs de fond */
+.bg-primary {
+  background-color: var(--color-primary);
+}
+
+.bg-secondary {
+  background-color: var(--color-secondary);
+}
+
+.bg-accent {
+  background-color: var(--color-accent);
+}
+
+.bg-background {
+  background: var(--color-background);
+}
+
+/* Couleurs de texte */
+.text-primary {
+  color: var(--color-primary);
+}
+
+.text-secondary {
+  color: var(--color-secondary);
+}
+
+.text-accent {
+  color: var(--color-accent);
+}
+
+.text-text {
+  color: var(--color-text);
+}
+
+.text-title {
+  color: var(--color-title);
+}
+
+.btn-gradient {
+  background: var(--color-button);
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+  opacity: 0.8;
+}
+.btn-gradient:hover {
+  background: var(--color-button-hover);
+  font-weight: 520;
+  opacity: 1;
+  box-shadow: 0px 0px 60px #dddddd;
+}
