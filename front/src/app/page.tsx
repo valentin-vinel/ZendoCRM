@@ -1,17 +1,19 @@
 "use client";
 import Image from 'next/image';
-import value1img from "../../public/dossier-ouvert.png"
-import value2img from "../../public/temps-restant.png"
-import value3img from "../../public/productivite.png"
-import screendashboard from "../../public/screen-dashboard.png"
-import avis1img from "../../public/client-pic/john.png"
-import avis2img from "../../public/client-pic/sophie.png"
-import avis3img from "../../public/client-pic/maxime.png"
-import avis4img from "../../public/client-pic/lea.png"
-import { useState } from 'react';
+import value1img from "../../public/dossier-ouvert.png";
+import value2img from "../../public/temps-restant.png";
+import value3img from "../../public/productivite.png";
+import screendashboard from "../../public/screen-dashboard.png";
+import avis1img from "../../public/client-pic/john.png";
+import avis2img from "../../public/client-pic/sophie.png";
+import avis3img from "../../public/client-pic/maxime.png";
+import avis4img from "../../public/client-pic/lea.png";
+// import { useState } from "react";
+// import { Dialog, DialogPanel } from '@headlessui/react'
+// import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 export default function Home() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  // const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
 
   const navigation = ["Solution", "Tarif", " Contact"]
@@ -74,7 +76,7 @@ export default function Home() {
           <div className="flex lg:hidden">
             <button
               type="button"
-              onClick={() => setMobileMenuOpen(true)}
+              // onClick={() => setMobileMenuOpen(true)}
               className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-200"
             >
               <span className="sr-only">Open main menu</span>
