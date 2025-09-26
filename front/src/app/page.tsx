@@ -1,4 +1,4 @@
-"use-client";
+"use client";
 import Image from 'next/image';
 import value1img from "../../public/dossier-ouvert.png"
 import value2img from "../../public/temps-restant.png"
@@ -8,12 +8,11 @@ import avis1img from "../../public/client-pic/john.png"
 import avis2img from "../../public/client-pic/sophie.png"
 import avis3img from "../../public/client-pic/maxime.png"
 import avis4img from "../../public/client-pic/lea.png"
-// import { useState } from "react";
-// import { Dialog, DialogPanel } from '@headlessui/react'
-// import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import { useState } from 'react';
 
 export default function Home() {
-  // const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+
 
   const navigation = ["Solution", "Tarif", " Contact"]
 
@@ -75,7 +74,7 @@ export default function Home() {
           <div className="flex lg:hidden">
             <button
               type="button"
-              // onClick={() => setMobileMenuOpen(true)}
+              onClick={() => setMobileMenuOpen(true)}
               className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-200"
             >
               <span className="sr-only">Open main menu</span>
@@ -114,7 +113,7 @@ export default function Home() {
               alt={val.title}
               width={75}
               height={75}
-              className="w-[60] h-[60]] mb-4 bg-primary p-4 rounded-md"
+              className="w-[60px] h-[60px] mb-4 bg-primary p-4 rounded-md"
             />
             <h3 className="text-xl text-primary font-bold mb-2">{val.title}</h3>
             <p className="text-primary">{val.description}</p>
@@ -132,7 +131,7 @@ export default function Home() {
           width={800}
           height={800}
           alt='Screen dashboard'
-          className='rounded-xl border-1 w-full m-auto md:w-[550]'
+          className='rounded-xl border-1 w-full m-auto md:w-[550px]'
         />
       </section>
 
@@ -140,14 +139,14 @@ export default function Home() {
         <h3 className="text-xl text-primary font-bold mb-4">Ils nous font déjà confiance...</h3>
         <div className='flex flex-wrap mb-16'>
           {avis.map((element, index) => (
-            <article key={index} className='mb-8 p-4 rounded-xl bg-secondary max-w-[260] h-[250] m-auto'>
+            <article key={index} className='mb-8 p-4 rounded-xl bg-secondary max-w-[260px] h-[250px] m-auto'>
               <div className='flex gap-2 mb-4'>
                 <Image 
                   src={element.img}
                   alt={"Photo de " + element.name}
                   width={300}
                   height={300}
-                  className='rounded h-[50] w-[50]'
+                  className='rounded h-[50px] w-[50px]'
                 />
                 <div>
                   <h4 className='text-title font-bold'>{element.name}</h4>
@@ -170,7 +169,7 @@ export default function Home() {
       <footer className="bg-primary p-6">
         <div className='md:max-w-6xl md:flex md:justify-around md:items-center m-auto'>
           <div className='mb-16 px-12 md:px-0 md:mb-6'>
-            <h1 className="text-xl text-white font-bold w-[260] border-b-1 lg:w-[400]">Zendo</h1>
+            <h1 className="text-xl text-white font-bold w-[260px] border-b-1 lg:w-[400px]">Zendo</h1>
 
           </div>
           <nav className='text-white flex flex-col gap-8 items-center md:flex-row'>
